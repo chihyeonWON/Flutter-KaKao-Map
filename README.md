@@ -17,3 +17,11 @@ keytool -exportcert -alias androiddebugkey -keystore ~/.android/debug.keystore -
 암호화 프로그램인 openssl라고 하는데 openssl을 운영체제에 맞게 설치한 후에 환경 변수로 등록해준다.
 keytool 이하 명령어를 입력하면 디버깅용 해시키를 하나 얻는 데 이것을 입력해주면 된다.
 ```
+
+## 안드로이드 앱용 카카오 SDK 설치
+```
+https://apis.map.kakao.com/android/guide/ 에서 안드로이드 앱용 카카오 SDK를 설치한다.
+다운로드 받은 SDK의 다음 경로로 이동한 후에 arm 파일들과 .jar 파일 모두를 복사한다.
+
+```
+![image](https://user-images.githubusercontent.com/58906858/213152875-081f8dec-beea-4dc9-bda4-eba8937d95f9.png)
