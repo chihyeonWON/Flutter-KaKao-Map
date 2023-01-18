@@ -1,40 +1,53 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_kakao_map/flutter_kakao_map.dart';
+import 'package:flutter_kakao_map/kakao_maps_flutter_platform_interface.dart';
 
-void main() {
-  runApp(MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home:MyHomePage(),
+      debugShowCheckedModeBanner: false,
+      home: MyAppOne(),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-
+class MyAppOne extends StatefulWidget {
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  _MyAppState createState() => _MyAppState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyAppState extends State<MyAppOne> {
+  KakaoMapController? mapController;
+  MapPoint _visibleRegion = MapPoint(35.256201693304334, 128.62742720608398);
+  CameraPosition _kInitialPosition =
+  CameraPosition(target: MapPoint(35.256201693304334, 128.62742720608398), zoom: 5);
+
+  void onMapCreated(KakaoMapController controller) async {
+    final MapPoint visibleRegion = await controller.getMapCenterPoint();
+    setState(() {
+      mapController = controller;
+      _visibleRegion = visibleRegion;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('first commit'),
+      appBar: AppBar(title: const Text('Flutter KakaoMap example')),
+      body: Column(
+        children: [
+          Center(
+              child: SizedBox(
+                  width: 300.0,
+                  height: 200.0,
+                  child: KakaoMap(
+                      onMapCreated: onMapCreated,
+                      initialCameraPosition: _kInitialPosition)))
+        ],
       ),
-      body: Center(
-        child: Column(
-        )
-      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
