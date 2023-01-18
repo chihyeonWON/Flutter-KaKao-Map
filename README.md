@@ -31,3 +31,18 @@ https://apis.map.kakao.com/android/guide/ 에서 안드로이드 앱용 카카�
 arm 폴더는 app/src/main/jniLibs 경로에 붙여넣고 .jar 파일은 app/libs 경로에 붙여넣는다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/213154163-d13fd5dc-7bc2-459e-b3d9-1322f9ed2ac0.png)
+
+## 권한 설정과 앱키 추가
+```
+AndroidManifest.xml에 인터넷 권한, 위치 권한 설정을 추가하고 앱키를 추가합니다.
+앱 키는 내 애플리케이션의 네이티브 앱 키를 넣어줍니다.
+
+<!--권한 추가 -->
+<uses-permission android:name="android.permission.INTERNET">
+</uses-permission>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION">
+</uses-permission>
+
+<!--APP KEY 추가-->
+<meta-data android:name="com.kakao.sdk.AppKey" android:value="XXXXXXXXXXXXXXXXXXXXXXXXXXXX"/>
+```
