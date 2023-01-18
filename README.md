@@ -1,4 +1,6 @@
 ## kakao Map API
+![image](https://user-images.githubusercontent.com/58906858/213165867-84fa9b7f-0dc5-46d3-8289-7c5039b278b5.png)
+
 ```
 Google Map API와 Naver Map API를 사용해보았다. 이번에는 Kakao Map API를 사용하여 앱에 지도를 표시하는 
 앱 프로젝트를 진행하였다. https://developers.kakao.com/ 사이트에서 kakao developer 계정을 만든다.
@@ -51,4 +53,11 @@ AndroidManifest.xml에 인터넷 권한, 위치 권한 설정을 추가하고 �
 ```
 최신 버전 0.0.4 버전의 flutter_kakao_map을 사용하기 위해 터미널에 
 flutter pub add flutter_kakao_map 명령어를 실행하여 yaml파일의 의존성을 추가해줍니다.
+```
+
+## 예제 코드 사용
+![image](https://user-images.githubusercontent.com/58906858/213165731-36db1122-ca9f-4027-b02f-d2549536664a.png)
+
+```
+결과적으로는 잘 안된다.... flutter가 구글 기반이라 그런가 구글 맵 api만 잘 작동했다. naver와 kakao는 맵 구현에 실패했다.
 ```
