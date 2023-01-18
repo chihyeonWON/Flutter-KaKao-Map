@@ -1,16 +1,6 @@
-# kakaomap
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## kakao Map API
+```
+Google Map API와 Naver Map API를 사용해보았다. 이번에는 Kakao Map API를 사용하여 앱에 지도를 표시하는 
+앱 프로젝트를 진행하였다. https://developers.kakao.com/ 사이트에서 kakao developer 계정을 만든다.
+```
+![image](https://user-images.githubusercontent.com/58906858/213147010-22e1ca5e-3cc4-4e0e-ad86-96ccddbfa320.png)
