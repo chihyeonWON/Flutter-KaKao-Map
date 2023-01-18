@@ -25,3 +25,9 @@ https://apis.map.kakao.com/android/guide/ 에서 안드로이드 앱용 카카�
 
 ```
 ![image](https://user-images.githubusercontent.com/58906858/213152875-081f8dec-beea-4dc9-bda4-eba8937d95f9.png)
+
+## 설치한 라이브러리 파일을 앱 프로젝트에 추가
+```
+arm 폴더는 app/src/main/jniLibs 경로에 붙여넣고 .jar 파일은 app/libs 경로에 붙여넣는다.
+```
+![image](https://user-images.githubusercontent.com/58906858/213154163-d13fd5dc-7bc2-459e-b3d9-1322f9ed2ac0.png)
