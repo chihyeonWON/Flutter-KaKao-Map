@@ -46,3 +46,9 @@ AndroidManifest.xml에 인터넷 권한, 위치 권한 설정을 추가하고 �
 <!--APP KEY 추가-->
 <meta-data android:name="com.kakao.sdk.AppKey" android:value="XXXXXXXXXXXXXXXXXXXXXXXXXXXX"/>
 ```
+
+## flutter_kakao_map 라이브러리 사용
+```
+최신 버전 0.0.4 버전의 flutter_kakao_map을 사용하기 위해 터미널에 
+flutter pub add flutter_kakao_map 명령어를 실행하여 yaml파일의 의존성을 추가해줍니다.
+```
